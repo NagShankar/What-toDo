@@ -1,0 +1,28 @@
+.header{
+    background: $off-black;
+    margin-bottom: $m-size; //for mobile
+    padding: $m-size 0;
+    color: #ffffff;
+ 
+}
+
+.header__title{
+   font-size: $l-size;
+   margin: 0 0 0.5rem 0;
+}
+
+.header__subtitle{
+    color: $off-white;
+    font-size: $m-size;
+    margin: 0;
+    font-weight: 500;
+}
+
+//media query, mobile first approch - for desktop
+@media (min-width: $desktop-breakpoint) {
+    
+    .header{
+         margin-bottom: $xl-size;
+    }
+    
+}

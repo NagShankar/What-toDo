@@ -20,11 +20,11 @@ const OptionModal = (props) => (
        <Modal
           isOpen={!!props.sendingSelectedOption}
           onRequestClose={props.closingModal}
-          contentLabel="Example Modal -  Seleced Option"
+          contentLabel="Example Modal -  Seleced Task"
           closeTimeoutMS={200}
           className="custom_modal_style"
         >
-             <h3 className="custom_modal_style__title">Selected Option</h3>
+             <h3 className="custom_modal_style__title">Selected Task</h3>
              { props.sendingSelectedOption && <p className="custom_modal_style__body">{props.sendingSelectedOption}</p> }
     <button className="button" onClick={props.closingModal}>Okay</button>
         

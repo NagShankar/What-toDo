@@ -48,10 +48,10 @@ class IndecisionApp extends React.Component{
        
             //validation
             if(!option){ //if option doesnt exist
-                return 'Hello, Looks like you forgot to enter an option!'
+                return 'Hello, Looks like you forgot to enter a Task!'
               }
               else if(this.state.options.indexOf(option)>-1 || res.includes(upp)){
-                return 'Oops! Option already exist!'
+                return 'Oops! Task already exist!'
                }
        
 //             else if(res.includes(upp)){

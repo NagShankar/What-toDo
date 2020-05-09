@@ -7,6 +7,8 @@ import IndecisionApp from "./components/IndecisionApp"; //OR ./components/Indeci
 import './styles/style.scss';
 import 'normalize.css/normalize.css';
 
+//console.log('source map testing - to check from where this is coming from')
+
 ReactDOM.render(
 <IndecisionApp />,
 document.getElementById('app')

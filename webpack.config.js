@@ -21,7 +21,7 @@ module.exports = (env) => {
     return   {
     entry: './src/app.js',
     output:{
-        path: path.join(__dirname, 'public'),
+        path: path.join(__dirname, 'public', 'dist'),
         filename: 'bundle.js'
     },
 module: {
@@ -55,7 +55,8 @@ module: {
     plugins:[MiniCssExtract],
     devtool: isProduction ? 'source-map' : 'inline-source-map', //cheap-module-eval-source-map -> are for dev purpose we dont need in prod, inline-source-map -> are for dev purpose, instead we can opt for slower source map i.e -> source-map, and it shold work when someone opens dev tools, DOING ALL THIS TO REDUCE SIZE OF THE BUNDLE.JS in the final production
     devServer:{
-        contentBase: path.join(__dirname, 'public')
+        contentBase: path.join(__dirname, 'public'),
+        publicPath:'/dist/'
     }
     
 };
